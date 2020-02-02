@@ -12,7 +12,7 @@ author_profile: true
 
 
 ## Teaching STA303 (Methods of Data Analysis: Intro)
-[LMM R demo](https://maxgniluynehc.github.io/notes/lmm_demo.md)
+[LMM R demo](https://maxgniluynehc.github.io/notes/lmm_demo.html), click [this](https://github.com/MaxGniluynehc/maxgniluynehc.github.io/blob/master/_notes/lmm_demo.html) if that does not work. 
 
 
     
