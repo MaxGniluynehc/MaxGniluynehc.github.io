@@ -131,16 +131,6 @@ legend("topright",
 
 #### 4.3.3 Which one is better? LR test
 
-$$
-\begin{split}
-D & = -2[\log(L(\tilde{\theta})) - \log(L(\hat{\theta}))] \sim \chi_p^2 \\
-\text{where, } &\theta = (\beta, \tau, \sigma) \\
-& \tilde{\theta}  \text{ is the MLE of the constrained model (time-as-factor model); }\\
-& \hat{\theta} \text{ is the MLE of the less contrained model (treat-by-time model); }\\
-& p \text{ is the number of parameter of the less constrained model} 
-\end{split}
-$$
-
 ```{r}
 
 # The defult method is REML. But, to use LR test, 
@@ -156,22 +146,11 @@ cowLmeIntMl = nlme::lme(as.formula(cowLmeInt$call$fixed),
 
 lmtest::lrtest(cowLmeIntMl, cowLmeMl)
 
-
-
 ```
 
 
 
 #### 4.3.4 Contrast Model 
-
-$$
-E(Y_{ij}) = \begin{cases}
-\theta_j,  & diet_i = \text{barley} \\
-\theta_j + \alpha_1 + \beta_1 t_j + (\beta_1' t_j^2), & diet_i = \text{lupins}  \\
-\theta_j + \alpha_2 + \beta_2 t_j+ (\beta_2' t_j^2), & diet_i = \text{mixed}
-\end{cases}
-$$
-where, $\alpha_i$'s can be considered as an increment of the intercepts (i.e. level effect) of each treatment, compared to the baseline treatment (barley).        
 
 ```{r}
 # fit the constrast model, with the 2nd order time terms
@@ -238,39 +217,12 @@ school[1:12, c("school", "class", "student", "year",
 
 #### 4.4.1 Multi-level models 
 
-$$
-\begin{split}
-& Y_{ijkm} \sim N(\mu_{ijkm}, \tau^2) \\
-& \mu_{ijkm} = X_{ijkm} \beta + B_i + C_{ij} + D_{ijk} \\
-\text{where, } & B_i \sim N(0, \sigma_B^2) \\
-& B_i \sim N(0, \sigma_B^2) \\
-& C_{ij} \sim N(0, \sigma_C^2) \\
-& D_{ijk} \sim N(0, \sigma_D^2) \\
-\end{split}
-$$
-
-- $Y_{ijkm}$ represents the math score of the m-th individual/observation/student in the k-th class of the j-th school (in the i-th state).         
-
-score = (state effect) + school effect + class effect + student effect + covariates
-
 ```{r}
 # fit the multi-level lmm
 schoolLme = lme(math ~ gender + socialClass, 
                 random = ~1 | school/class/student, 
                 data = school)
 ```
-
-
-**Variance matrix**:         
-$$
-\begin{split}
-& Y_k^*|B,C,D \sim N(\mu_k^*, \tau^2) \\
-\text{where, } & \mu_k^* = X_k \beta + A_{Bk}B + A_{C_k}C + A_{Dk}D \\
-& \textbf{Y}^* \sim MVN (\textbf{X} \beta , V) \\
-& V = A_B^T \Sigma_B A_B + A_C^T \Sigma_C A_C + A_D^T \Sigma_D A_D + \tau^2 I
-\end{split}
-$$
-
 
 
 ```{r}
@@ -292,16 +244,6 @@ knitr::kable(Pmisc::lmeTable(schoolLme), digits = 4, escape = FALSE)
 
 
 #### 4.4.2 Random Slope Models 
-
-$$
-\begin{split}
-& Y_{ij}|\textbf{U} \sim N(\mu_{ij}, \tau^2) \\
-\text{where, } & \mu_{ij} = \textbf{X}_{ij}\beta + U_{i1} +U_{i2} W_{ij}; \\
-& \left(\begin{matrix} U_{i1} & \text{ (random intercept)} \\ U_{i2} &\text{ (random slope)}\end{matrix}\right) \sim MVN(0, \Gamma) \\
-& X_{ijp}, W_{ij} \text{ are all covariates, but the coef on } W_{ij} \text{ is different for each subject} 
-\end{split}
-$$
-
 
 ```{r}
 cowLmeRs = lme(protein ~ t + diet + tLupins + tMixed,
