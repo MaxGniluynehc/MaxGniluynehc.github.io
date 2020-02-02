@@ -1,7 +1,3 @@
----
-output:html_document
----
-
 
 ### 4.1 LMM demo: the Pigs
 ```{r}
