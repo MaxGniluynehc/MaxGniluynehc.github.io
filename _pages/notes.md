@@ -13,11 +13,35 @@ The followings are the notes of Max Chen, all of which are taken either during l
 Ultimately, please do NOT attempt to make a profit from any of these works, and please respect the intellectual properties of those professors, authors, and the writer. Thank you and enjoy reading!      
 
 
-## STA261 
-Course: Intro to Statistics       
+# Undergraduate Level
+The followings are some notes that I wrote during my undergraduate study in Statistics at Universit of Toronto (2016-2020), I hope they can be of some help for those who are interested in Stats at an introductory/undergraduate level! ☺️
+## Intro to Statistics Theory  
 Taught by: Alex Stringer        
-Semeter: Winter 2017          
+Semester: Winter 2017          
 Notes: [STA261](https://maxgniluynehc.github.io/notes/STA261_Review.pdf)
+
+# Graduate Level
+The followings are some notes that I wrote during my master study in Statistics at Universit of Oxford (2020-2021), I hope they can be of some help for those who are interested  in Stats at a graduate level! ☺️         
+
+## Statistical Inference
+Taught by: Prof Julien Berestycki
+Semester: Fall 2020
+Notes: [Stat Inference](https://maxgniluynehc.github.io/notes/Stat_Inference_Review.pdf)
+
+## Bayesian Analysis       
+Taught by: Prof. Geoff Nicholls        
+Semester: Winter 2021        
+Notes: [Bayes](https://maxgniluynehc.github.io/notes/Bayes_Method_Review.pdf)         
+
+## Computational Statistics      
+Taught by: Prof. Geoff Nicholls and Prof. Frank Windmeijer       
+Semester: Winter 2021     
+Notes: [Comp Stats](https://maxgniluynehc.github.io/notes/Comp_Stat_Review.pdf)       
+
+## Statistical Machine Learning and some Advanced Topics
+Taught by: Prof. Francois Caron and Prof Tom Rainforth      
+Semester: Winter 2021     
+Notes: [SML](https://maxgniluynehc.github.io/notes/SML_Models_Review.pdf)      
 
 
 
