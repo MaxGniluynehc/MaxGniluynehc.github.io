@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Max Chen"
   avatar           : "usv1-Max.jpg"
-  bio              : "Undergrad at University of Toronto; Rearch Assistant at Risklab"
-  location         : "Toronto, CA"
+  bio              : "Research Assistant at FOCUS Research Group, University of Oxford"
+  location         : "Oxford, England, UK"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"http://yourfullgooglescholarurl.com"
@@ -97,6 +97,7 @@ author:
   facebook         :
   foursquare       :
   github           : "maxgniluynehc"
+  FOCUS            : "https://oxfocus.co.uk"
   risklab          : "https://www.risklab.utoronto.ca/"
   google_plus      :
   keybase          :
