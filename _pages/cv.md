@@ -110,8 +110,8 @@ Passed FRM level 1 exam.                                                        
 Winner of Dean’s List Scholar for 3 consecutive years（2017 winter, 2018 winter, 2019 winter semester） (2016-2019)             
 
 ## SKILLS & HOBBIES         
-Programming Skills: Python (Pycharm, PyTorch, TensorFlow, Numpy, Pandas, Matploltib, Scikit-Learn, Pymc3); R (Rstudio, Rmarkdown); \LaTex/Overleaf; Tableau
-Other Skills: Microsoft Office. Presentation and public speaking skills. Efficient time management skills.
+Programming Skills: Python (Pycharm, PyTorch, TensorFlow, Numpy, Pandas, Matploltib, Scikit-Learn, Pymc3); R (Rstudio, Rmarkdown); \LaTex/Overleaf; Tableau.     
+Other Skills: Microsoft Office. Presentation and public speaking skills. Efficient time management skills.       
 Hobbies: Traditional Chinese Martial Art, Work out, Skiing, Ping Pong, Horse-riding and Hiking.             
 
 
