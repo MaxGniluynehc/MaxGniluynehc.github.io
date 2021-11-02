@@ -116,7 +116,7 @@ Hobbies: Traditional Chinese Martial Art, Work out, Skiing, Ping Pong, Horse-rid
 
 
 
-Electrontic Version of my CV: [CV of Max Chen](https://maxgniluynehc.github.io/CV/CV_of_MaxChen.pdf)
+Electrontic Version of my CV: [CV of Max Chen](https://maxgniluynehc.github.io/CV/CHEN-Yuling-CV1.pdf)
 
 
   
